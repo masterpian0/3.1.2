@@ -87,7 +87,7 @@
 
                                                     <div class="modal-body bg-white">
                                                         <form id="formEditUser" th:attrappend="id=${user.id}"
-                                                              method="post"
+                                                              th:method="PATCH"
                                                               th:action="@{/update}"
                                                               class="form-signin mx-auto font-weight-bold text-center"
                                                               style="width: 200px;">
@@ -186,7 +186,7 @@
 
                                                     <div class="modal-body bg-white">
                                                         <form id="formDeleteUser" th:attrappend="id=${user.id}"
-                                                              method="post"
+                                                              th:method="DELETE"
                                                               th:action="@{/delete/{id}(id=${user.id})}"
 
                                                               class="form-signin mx-auto font-weight-bold text-center"
